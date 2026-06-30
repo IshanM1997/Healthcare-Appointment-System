@@ -1,0 +1,35 @@
+{
+  "name": "healthcare-appointment-system",
+  "version": "1.0.0",
+  "description": "A learning-oriented healthcare appointment system: patient registration, doctor availability calendars, conflict-free appointment booking, prescriptions, and SMS reminders via Twilio. Demonstrates complex scheduling logic and HIPAA-style role-based data access control.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/db/seed.js",
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "healthcare",
+    "appointments",
+    "scheduling",
+    "hipaa",
+    "twilio",
+    "express",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "twilio": "^5.3.0",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
